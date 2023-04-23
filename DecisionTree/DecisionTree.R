@@ -1,2 +1,8 @@
 library(rpart)
 library(tidyverse)
+library(randomForest)
+library(pROC)
+data("iris")
+data<-tibble::as_tibble(iris)
+print(data)
+rpart(iris)
